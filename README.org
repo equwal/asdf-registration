@@ -19,4 +19,4 @@ sh asdf-registration/install.sh
    For an ASDF project not inside of a repository directory, use
    =asdf-registration:add-to-registry=.
 * Guts
-  ASDF-registration is a wrapper around the  =*central-registry*=.
+  ASDF-registration is a wrapper around the  =*central-registry*=. If you need something more complex, use the [[https://common-lisp.net/project/asdf/asdf.html#Configuration-DSL][configuration DSL]].
