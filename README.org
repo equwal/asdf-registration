@@ -1,0 +1,23 @@
+#+title: ASDF-registration
+#+author: Spenser Truex
+#+email: web@spensertruex.com
+Register you directories in the ASDF subsystem. probably has a better way
+to do it, but this one works. Uses the central registry and a
+
+* Install
+Run the install script. If it complains, set =$CL_INIT= and =$ASDF_REPO=.
+#+begin_src shell
+git clone git@github.com:equwal/asdf-registration.git
+export CL_INIT="$HOME/.sbclrc" # for some SBCLs only.
+export ASDF_REPO="$HOME/common-lisp" # This is where mine is.
+sh asdf-registration/install.sh
+#+end_src
+* Advanced install
+** More than one repository
+  Add =asdf-registration:add-repo= lines to your init file. The subdirectories
+  will be added to the ASDF registry.
+** Directories not in a repository
+   For an ASDF project not inside of a repository directory, use
+   =asdf-registration:add-to-registry=.
+* Guts
+  ASDF-registration is a wrapper around the  =*central-registry*=.
