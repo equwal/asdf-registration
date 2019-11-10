@@ -1,8 +1,7 @@
 #+title: ASDF-registration
 #+author: Spenser Truex
 #+email: web@spensertruex.com
-Register you directories in the ASDF subsystem. probably has a better way
-to do it, but this one works.
+Register you directories in the ASDF subsystem. [[https://common-lisp.net/project/asdf/asdf.html#Configuration-DSL][ASDF has a better way to do it]], but this one works too.
 
 * Install
 Run the install script. If it complains, set =$CL_INIT= and =$ASDF_REPO=.
