@@ -2,7 +2,7 @@
 #+author: Spenser Truex
 #+email: web@spensertruex.com
 Register you directories in the ASDF subsystem. probably has a better way
-to do it, but this one works. Uses the central registry and a
+to do it, but this one works.
 
 * Install
 Run the install script. If it complains, set =$CL_INIT= and =$ASDF_REPO=.
